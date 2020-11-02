@@ -44,7 +44,20 @@ body {
 .overview-hero{
 	grid-row: 2;
 	background-color: #E2E8F0;
+	height: 250px;
+	display: grid;
+	justify-content: center;
+}
+.overview-hero-image> img[src = 'mindfulness.png']{
 	height: 200px;
+	width: 200px;
+	float: left;
+	padding: 25px 50px 25px;
+	mix-blend-mode: multiply;
+}
+.overview-hero-text{
+	float:auto;
+	padding: 25px 0 25px;
 }
 /*
 .container:nth-child(4){
