@@ -2,15 +2,65 @@
 body {
     margin: 0;
     font-size: 16px;
+    display: grid;
+    grid-template-rows: 50px auto auto auto auto auto 50px;
+    grid-row-gap: 10px;
     
 }
+
+
 
 .container {
     margin: 0 auto;
     max-width: 960px;
-    width: 100%;
-    display: flex;
-    
+    width: 100%; 
 }
 
+/*.container:nth-child(1){
+	grid-area: header;
+*/ header{
+	display: flex;
+	justify-content: center;
+	background-color: red;
+	height: 100px;
+}
 
+.container:nth-child(1) > nav > ul {
+	list-style: none;
+	flex-direction: row;
+	display: inline-flex;
+	float: right;
+}
+
+.container:nth-child(1) > nav > ul > li > a
+{
+	padding-left: 10px;
+}
+
+.container:nth-child(1) > h1{
+	float: left;
+}
+
+.overview-hero{
+	grid-row: 2;
+	background-color: #E2E8F0;
+	height: 200px;
+}
+/*
+.container:nth-child(4){
+	grid-row-start: 
+}
+
+.container:nth-child(5){
+	grid-row-start: 
+}
+
+.container:nth-child(6){
+	grid-row-start: 
+}
+*/
+footer {
+	background-color: #4A5568;
+	color: white;
+	padding: 10px 100px 10px 100px;
+}
